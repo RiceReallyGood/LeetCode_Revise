@@ -1,10 +1,11 @@
-#include "class.h"
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 #include <vector>
+
+#include "class.h"
 using namespace std;
 
-int main(){
+int main() {
     Solution s;
     //vector<vector<int>> edges = {{1,2},{0,0},{0,2},{0,1},{0,0},{0,2},{1,0},{0,1},{2,0}};
     //vector<vector<int>> buildings = {{0, 2, 3}, {0, 2, 5}, {0, 2, 7}};
@@ -27,7 +28,8 @@ int main(){
     //vector<vector<int>> people =  {{7,0},{4,4},{7,1},{5,0},{6,1},{5,2}};
     //vector<string> words = {"AACCGGTA"};
     vector<int> loc = {1, 1};
-    vector<vector<int>> graph =  {{1,1,0,0,0,0,0,0,0,0},{1,1,0,0,0,0,0,0,0,0},{0,0,1,0,0,0,0,0,0,0},{0,0,0,1,0,0,1,0,0,1},{0,0,0,0,1,0,0,0,0,0},{0,0,0,0,0,1,0,0,0,0},{0,0,0,1,0,0,1,0,0,0},{0,0,0,0,0,0,0,1,0,0},{0,0,0,0,0,0,0,0,1,0},{0,0,0,1,0,0,0,0,0,1}};
-    vector<int> nums = {100,90,80,70,60,50,60,70,80,90,100};
-    s.findSubsequences(nums);
+    vector<vector<int>> graph = {{1, 1, 0, 0, 0, 0, 0, 0, 0, 0}, {1, 1, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 1, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 1, 0, 0, 1, 0, 0, 1}, {0, 0, 0, 0, 1, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 1, 0, 0, 0, 0}, {0, 0, 0, 1, 0, 0, 1, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 1, 0}, {0, 0, 0, 1, 0, 0, 0, 0, 0, 1}};
+    vector<int> nums = {1, 3, 2, 2, 2, 3, 4, 3, 1};
+    vector<char> tasks = {'A', 'A', 'A', 'A', 'A', 'A', 'B', 'C', 'D', 'E', 'F', 'G'};
+    cout << s.leastInterval(tasks, 2) << endl;
 }
