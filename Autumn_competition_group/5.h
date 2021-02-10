@@ -21,6 +21,6 @@ private:
 
         if (lextra && rextra) res++;
 
-        extrainfo = 
+        extrainfo = 0;
     }
 };
